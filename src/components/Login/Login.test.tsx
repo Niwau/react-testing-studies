@@ -15,4 +15,11 @@ describe('Welcome message', () => {
     const message = screen.queryByRole('heading', { level: 1 });
     expect(message).not.toBeInTheDocument();
   })
+
+  it('should appear after 0.5 seconds', async () => {
+    render(<Login/>)
+    const message = await screen.findByRole('heading', { level: 1});
+    expect(message).toBeInTheDocument();
+  })
+
 })
