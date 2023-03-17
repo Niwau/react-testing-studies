@@ -26,7 +26,7 @@
 
 ---
 
-## **Métodos queryBy e queryAllBy**
+## **Métodos findBy e findAllBy**
 
 ### findBy
 - 🟢 Retorna uma promisse que é **resolvida** quando o elemento é encontrado.
