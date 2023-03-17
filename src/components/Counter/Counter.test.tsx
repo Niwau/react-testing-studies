@@ -3,6 +3,7 @@ import { Counter } from "./Counter";
 import user from '@testing-library/user-event';
 
 describe('Counter', () => {
+
   it('should render correctly', () => {
     render(<Counter/>);
     const counter = screen.getByRole('heading', { level: 1});
