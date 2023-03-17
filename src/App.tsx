@@ -1,13 +1,11 @@
-import { Skills } from "./components/Skills/Skills";
+import { Login } from "./components/Login/Login";
 
 function App() {
 
-  const skills = ['HTML', 'CSS', 'JavaScript'];
-
   return (
-    <Skills skills={skills}/>
+    <Login/>
   )
-  
+
 }
 
 export default App;
