@@ -17,5 +17,11 @@ describe('Application', () => {
     const checkbox = screen.getByRole('checkbox')
     expect(checkbox).toBeInTheDocument();
 
+    const pageHeading1 = screen.getByRole('heading', { level: 1 });
+    expect(pageHeading1).toBeInTheDocument();
+
+    const pageHeading2 = screen.getByRole('heading', { level: 2 });
+    expect(pageHeading2).toBeInTheDocument();
+
   })
 })
