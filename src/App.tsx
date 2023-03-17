@@ -1,7 +1,13 @@
-import { Application } from './components/Application/Application';
+import { Skills } from "./components/Skills/Skills";
 
 function App() {
-  return (<Application/>)
+
+  const skills = ['HTML', 'CSS', 'JavaScript'];
+
+  return (
+    <Skills skills={skills}/>
+  )
+  
 }
 
 export default App;
