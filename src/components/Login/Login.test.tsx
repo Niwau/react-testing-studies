@@ -7,11 +7,12 @@ describe('Login Button', () => {
     const button = screen.getByRole('button', { name: 'Login'});
     expect(button).toBeInTheDocument();
   })
+})
 
-  it('should not render welcome message', () => {
+describe('Welcome message', () => {
+  it('should not render', () => {
     render(<Login/>);
     const message = screen.queryByRole('heading', { level: 1 });
     expect(message).not.toBeInTheDocument();
   })
-
 })
